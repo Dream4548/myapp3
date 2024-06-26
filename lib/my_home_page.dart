@@ -17,20 +17,34 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
    
-    return Scaffold(
-      appBar: AppBar(
-       
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
+   return Scaffold(
+    appBar: AppBar(
+      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      title: const Text("Hello My App"),
+    ),
+    body: const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: [
+            Text("data1"),
+            Text("data2"),
+            Text("data3"),
           ],
         ),
-      ),
-    );
+        
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("data4"),
+            Text("data5"),
+            Text("data6"),
+          ],
+        ),
+    
+      ],
+    )
+   );
   }
 }
