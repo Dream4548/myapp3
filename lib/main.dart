@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 255, 0, 0)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Ratchanon ketkeaw'),
+      home: const MyHomePage(title: 'Ratchanon ketkea'),
     );
   }
 }
