@@ -12,6 +12,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  get style => null;
+
   
 
   @override
@@ -23,26 +25,44 @@ class _MyHomePageState extends State<MyHomePage> {
       title: const Text("Hello My App"),
     ),
     body: const Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("data1"),
-            Text("data2"),
-            Text("data3"),
-          ],
+        Center(
+          child: Text("Strawberry praviola",
+          style: TextStyle(fontSize: 24),
+          ),
         ),
-        
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("data4"),
-            Text("data5"),
-            Text("data6"),
-          ],
+        SizedBox(
+          height: 20,
         ),
-    
+        Center(  
+          child: Text("The TasteThe Viola cheesecake is our most favorite! It's where our company first started. She's named after our granny, Viola. You can even have it made gluten-free. Have a Viola and see why our slogan is When the Average Dessert Just Won't Do.",
+          style: TextStyle(fontSize: 15),
+          ),
+        ),
+        SizedBox(
+          height: 20,
+        ),
+        Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children:[
+          Column(
+            children: [
+
+            ],
+
+          ),
+          Icon(Icons.star),
+          Icon(Icons.star),
+          Icon(Icons.star),
+          Icon(Icons.star),
+          Icon(Icons.star),
+          SizedBox( width: 50,),
+          Text("170 reviewers",
+          style: TextStyle(fontSize: 15),
+          ),
+
+        ]
+      )
       ],
     )
    );
